@@ -9,18 +9,18 @@ package definitions;
 import java.util.Arrays;
 
 public class Library {
-    private Book[] bookAvailableInLibrary;
+    private Book[] availableBooksInLibrary;
 
     public Library() {
-        this.bookAvailableInLibrary = new Book[5];
+        this.availableBooksInLibrary = new Book[5];
     }
 
     public Book[] getAvailableBooksInLibrary() {
-        return bookAvailableInLibrary;
+        return availableBooksInLibrary;
     }
 
     public void setAvailableBooksInLibrary(Book[] availableBooksInLibrary) {
-        this.bookAvailableInLibrary = availableBooksInLibrary;
+        this.availableBooksInLibrary = availableBooksInLibrary;
     }
 
     /**
@@ -54,7 +54,7 @@ public class Library {
     @Override
     public String toString() {
         return "Library{" +
-                "availableBooksInLibrary=" + Arrays.toString(bookAvailableInLibrary) +
+                "availableBooksInLibrary=" + Arrays.toString(availableBooksInLibrary) +
                 '}';
     }
 
@@ -63,11 +63,11 @@ public class Library {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Library library = (Library) o;
-        return Arrays.equals(bookAvailableInLibrary, library.bookAvailableInLibrary);
+        return Arrays.equals(availableBooksInLibrary, library.availableBooksInLibrary);
     }
 
     @Override
     public int hashCode() {
-        return Arrays.hashCode(bookAvailableInLibrary);
+        return Arrays.hashCode(availableBooksInLibrary);
     }
 }
