@@ -76,7 +76,7 @@ public class Student {
     @Override
     public String toString() {
         return "Student Name- " + Arrays.toString(studentName) +
-                "   University Roll Number- " + universityRollNumber +
+                "  University Roll Number- " + universityRollNumber +
                 "  Number Of Books Issued- " + numberOfBooksIssued +
                 "  Issued Books- " + Arrays.toString(issuedBooks);
     }
