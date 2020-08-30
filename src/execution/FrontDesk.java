@@ -63,7 +63,7 @@ public class FrontDesk {
                     }
                     break;
                 default:
-                    System.out.println("PLease enter correct choice");
+                    System.out.println("Please enter correct choice");
             }
         } while (studentInput != EXIT);
         scanner.close();
