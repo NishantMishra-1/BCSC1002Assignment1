@@ -11,6 +11,7 @@ import java.util.Arrays;
 import java.util.Objects;
 
 public class Student {
+    private static final int NUMBER_OF_MAXIMUM_BOOKS_ISSUE = 1;
     private String[] studentName;
     private long universityRollNumber;
     private int numberOfBooksIssued;
@@ -20,6 +21,12 @@ public class Student {
         this.studentName = studentName.split(" ");
         this.universityRollNumber = universityRollNumber;
         this.issuedBooks = new Book[10];
+    }
+
+    public Student() {
+        this.studentName = getNameOfStudent();
+        this.universityRollNumber = getUniversityRollNumber();
+        this.issuedBooks = getIssuedBooks();
     }
 
     public String[] getNameOfStudent() {
@@ -100,5 +107,13 @@ public class Student {
         return result;
     }
 
+    public void showIssuedBooksByStudent() {
+        System.out.println("These are the books issued by you:- ");
+        for (int index = 0; index < NUMBER_OF_MAXIMUM_BOOKS_ISSUE; index++) {
+            if (issuedBooks[index].getBookName() != null) {
+                System.out.print(issuedBooks[index].getBookName() + (index < getNumberOfBooksIssued() - 1 ? ", " : ".\n"));
 
+            }
+        }
+    }
 }

@@ -46,7 +46,8 @@ public class Book {
 
     @Override
     public String toString() {
-        return "Name of book- \n" + getBookName() + "Author of book- \n" + getAuthorName() + "Book ISBN number: \n" + getBookISBNNumber();
+        return "Name of book- " + getBookName() + " Author of book- " + getAuthorName() +
+                " Book ISBN number- " + getBookISBNNumber();
     }
 
     @Override

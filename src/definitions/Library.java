@@ -28,8 +28,8 @@ public class Library {
      *
      * @param newBookName book name.
      */
-    public void addNewBookToLibrary(String newBookName) {
-        System.out.println("This " + newBookName + " is book added . ");
+    public void addNewBookToLibrary(Book newBookName) {
+        System.out.print("The " + newBookName + " is available for issuing .\n ");
     }
 
     /**
