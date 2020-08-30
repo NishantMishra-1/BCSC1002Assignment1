@@ -7,5 +7,10 @@
 package definitions;
 
 public class Library {
-        private Book[] availableBooksInLibrary;
+    private Book[] availableBooksInLibrary;
+
+    public Library() {
+        this.availableBooksInLibrary = new Book[5];
+    }
+
 }
